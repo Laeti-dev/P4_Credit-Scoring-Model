@@ -30,4 +30,4 @@ Note : the -f flag is to indicate that we are passing the path to Dockerfile
 ```bash
   docker run -it -p 8888:8888 -v $(pwd):/workspace my-container
 ```
-Note : -it is for interactive and tty ; -p is to pass the port to use ; -v isto bind the directory on the host to a directory in the container
+Note : -it is for interactive and tty ; -p is to pass the port to use ; -v isto bind the directory on the host to a directory in the container  

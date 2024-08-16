@@ -19,3 +19,15 @@ The business objective is to develop a credit scoring model that can effectively
 
 ## Keywords
 data analysis, feature engineering, model optimization, interpretability.
+
+# Build the docker container
+```bash
+  docker build -f .devcontainer/Dockerfile -t my-container .
+```
+Note : the -f flag is to indicate that we are passing the path to Dockerfile
+
+# Run the docker container
+```bash
+  docker run -it -p 8888:8888 -v $(pwd):/workspace my-container
+```
+Note : -it is for interactive and tty ; -p is to pass the port to use ; -v isto bind the directory on the host to a directory in the container

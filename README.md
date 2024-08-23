@@ -21,7 +21,7 @@ The business objective is to develop a credit scoring model that can effectively
 data analysis, feature engineering, model optimization, interpretability.
 
 # Use the notebook in colab
-To use the notebook in colab, you need to load your csv in the /content directory
+To use the notebook in colab, you need to load your data csv file in the /content directory
 
 # Build the docker container
 ```bash

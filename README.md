@@ -20,6 +20,9 @@ The business objective is to develop a credit scoring model that can effectively
 ## Keywords
 data analysis, feature engineering, model optimization, interpretability.
 
+# Use the notebook in colab
+To use the notebook in colab, you need to load your csv in the /content directory
+
 # Build the docker container
 ```bash
   docker build -f .devcontainer/Dockerfile -t my-container .
@@ -30,4 +33,4 @@ Note : the -f flag is to indicate that we are passing the path to Dockerfile
 ```bash
   docker run -it -p 8888:8888 -v $(pwd):/workspace my-container
 ```
-Note : -it is for interactive and tty ; -p is to pass the port to use ; -v isto bind the directory on the host to a directory in the container  
+Note : -it is for interactive and tty ; -p is to pass the port to use ; -v isto bind the directory on the host to a directory in the container

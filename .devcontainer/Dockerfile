@@ -17,7 +17,7 @@ COPY ../data .
 RUN pip install -r requirements.txt
 
 # Install Jupyter Notebook
-RUN pip install jupyter
+RUN pip install --upgrade jupyter
 
 # Expose port 8888 for Jupyter Notebook
 EXPOSE 8888

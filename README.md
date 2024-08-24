@@ -20,16 +20,26 @@ The business objective is to develop a credit scoring model that can effectively
 ## Keywords
 data analysis, feature engineering, model optimization, interpretability.
 
-# Use the notebook in colab
+# How to run the notebook
+## Use the notebook in colab
 To use the notebook in colab, you need to load your data csv file in the /content directory
 
-# Build the docker container
+## Create a virtual environment (recommanded)
+As Docker container doesn't offer enough capacities to run the notebook, I recommand to create a virtual environment directly
+```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+```
+## Build a Docker container
+
+
 ```bash
   docker build -f .devcontainer/Dockerfile -t my-container .
 ```
 Note : the -f flag is to indicate that we are passing the path to Dockerfile
 
-# Run the docker container
+
 ```bash
   docker run -it -p 8888:8888 -v $(pwd):/workspace my-container
 ```

@@ -1,2 +1,5 @@
 data/
 venv/
+previous_tests/
+presentation/
+*.pkl
